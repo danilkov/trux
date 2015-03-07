@@ -77,13 +77,13 @@
             <text>*%20Twitter%0A*%20Facebook%0A*%20Blog</text>
           </controlProperties>
         </control>
-        <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="850" h="-1" measuredW="142" measuredH="19" zOrder="9" locked="false" isInGroup="20">
+        <control controlID="9" controlTypeID="com.balsamiq.mockups::Label" x="0" y="109" w="850" h="-1" measuredW="119" measuredH="19" zOrder="9" locked="false" isInGroup="20">
           <controlProperties>
             <align>center</align>
             <bold>false</bold>
             <color>5263440</color>
             <size>11</size>
-            <text>Copyright%20%28C%29%202015%20trux.com</text>
+            <text>Copyright%20%28C%29%202015%20trux</text>
           </controlProperties>
         </control>
       </groupChildrenDescriptors>

@@ -33,14 +33,14 @@
         <text>Advanced%20Search</text>
       </controlProperties>
     </control>
-    <control controlID="7" controlTypeID="com.balsamiq.mockups::StickyNote" x="104" y="279" w="217" h="92" measuredW="109" measuredH="123" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::StickyNote" x="104" y="279" w="217" h="149" measuredW="109" measuredH="123" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>More%20fields%20for%20the%20basic%20search</text>
+        <text>More%20fields%20for%20the%20basic%20search%0AEven%20more%20fields/options%20for%20the%20advanced%20search.%20Depending%20on%20the%20account%20plan%2C%20allow%20saving%20a%20number%20of%20searches%2C%20allow%20run%20the%20searches%20on%20a%20schedule%20and%20notify%20by%20e-mail/mobile.</text>
       </controlProperties>
     </control>
-    <control controlID="8" controlTypeID="com.balsamiq.mockups::CallOut" x="414" y="258" w="213" h="76" measuredW="354" measuredH="39" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::CallOut" x="414" y="258" w="213" h="76" measuredW="306" measuredH="39" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>For%20registered%20users%20links%20to%20the%20advanced%20search%20page.%0AFor%20guests%20-%20to%20the%20sign-up%20page</text>
+        <text>For%20registered%20users%20show%20the%20advanced%20search%0AFor%20guests%20goes%20to%20the%20sign-up%20page</text>
       </controlProperties>
     </control>
     <control controlID="9" controlTypeID="com.balsamiq.mockups::Arrow" x="519" y="334" w="61" h="109" measuredW="150" measuredH="100" zOrder="9" locked="false" isInGroup="-1">
