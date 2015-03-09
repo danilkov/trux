@@ -26,19 +26,12 @@
         <text>Thumbnail</text>
       </controlProperties>
     </control>
-    <control controlID="61" controlTypeID="com.balsamiq.mockups::Arrow" x="541" y="75" w="166" h="68" measuredW="150" measuredH="100" zOrder="6" locked="false" isInGroup="-1">
-      <controlProperties>
-        <direction>bottom</direction>
-        <rightArrow>false</rightArrow>
-        <text/>
-      </controlProperties>
-    </control>
-    <control controlID="85" controlTypeID="com.balsamiq.mockups::Image" x="60" y="189" w="264" h="178" measuredW="77" measuredH="79" zOrder="7" locked="false" isInGroup="-1">
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::Image" x="60" y="189" w="264" h="178" measuredW="77" measuredH="79" zOrder="6" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Bigger%20image/video</text>
       </controlProperties>
     </control>
-    <control controlID="86" controlTypeID="com.balsamiq.mockups::PointyButton" x="42" y="408" w="21" h="-1" measuredW="30" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::PointyButton" x="42" y="408" w="21" h="-1" measuredW="30" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>none</borderStyle>
         <direction>left</direction>
@@ -46,7 +39,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="87" controlTypeID="com.balsamiq.mockups::PointyButton" x="63" y="265" w="21" h="-1" measuredW="30" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+    <control controlID="87" controlTypeID="com.balsamiq.mockups::PointyButton" x="63" y="265" w="21" h="-1" measuredW="30" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>none</borderStyle>
         <direction>left</direction>
@@ -54,7 +47,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="88" controlTypeID="com.balsamiq.mockups::PointyButton" x="324" y="408" w="21" h="-1" measuredW="30" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::PointyButton" x="324" y="408" w="21" h="-1" measuredW="30" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>none</borderStyle>
         <direction>right</direction>
@@ -62,7 +55,7 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="89" controlTypeID="com.balsamiq.mockups::PointyButton" x="299" y="265" w="21" h="-1" measuredW="30" measuredH="27" zOrder="11" locked="false" isInGroup="-1">
+    <control controlID="89" controlTypeID="com.balsamiq.mockups::PointyButton" x="299" y="265" w="21" h="-1" measuredW="30" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
       <controlProperties>
         <borderStyle>none</borderStyle>
         <direction>right</direction>
@@ -70,25 +63,25 @@
         <text/>
       </controlProperties>
     </control>
-    <control controlID="90" controlTypeID="com.balsamiq.mockups::StickyNote" x="138" y="143" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="12" locked="false" isInGroup="-1">
+    <control controlID="90" controlTypeID="com.balsamiq.mockups::StickyNote" x="138" y="143" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="11" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Overlay.%20Only%20visible%20on%20mouse-overs</text>
       </controlProperties>
     </control>
-    <control controlID="91" controlTypeID="com.balsamiq.mockups::Arrow" x="247" y="207" w="59" h="58" measuredW="150" measuredH="100" zOrder="13" locked="false" isInGroup="-1">
+    <control controlID="91" controlTypeID="com.balsamiq.mockups::Arrow" x="247" y="207" w="59" h="58" measuredW="150" measuredH="100" zOrder="12" locked="false" isInGroup="-1">
       <controlProperties>
         <leftArrow>false</leftArrow>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="92" controlTypeID="com.balsamiq.mockups::Arrow" x="73" y="207" w="65" h="58" measuredW="150" measuredH="100" zOrder="14" locked="false" isInGroup="-1">
+    <control controlID="92" controlTypeID="com.balsamiq.mockups::Arrow" x="73" y="207" w="65" h="58" measuredW="150" measuredH="100" zOrder="13" locked="false" isInGroup="-1">
       <controlProperties>
         <direction>bottom</direction>
         <rightArrow>false</rightArrow>
         <text/>
       </controlProperties>
     </control>
-    <control controlID="93" controlTypeID="com.balsamiq.mockups::Component" x="726" y="162" w="156" h="329" measuredW="156" measuredH="329" zOrder="15" locked="false" isInGroup="-1">
+    <control controlID="93" controlTypeID="com.balsamiq.mockups::Component" x="726" y="162" w="156" h="329" measuredW="156" measuredH="329" zOrder="14" locked="false" isInGroup="-1">
       <controlProperties>
         <override controlID="6" x="24" y="15" w="109" h="123"/>
         <override controlID="7" x="0" y="0" w="156" h="329"/>
@@ -96,7 +89,7 @@
         <src>./assets/ads%20-%20vertical.bmml</src>
       </controlProperties>
     </control>
-    <control controlID="94" controlTypeID="com.balsamiq.mockups::StickyNote" x="389" y="189" w="293" h="178" measuredW="109" measuredH="123" zOrder="16" locked="false" isInGroup="-1">
+    <control controlID="94" controlTypeID="com.balsamiq.mockups::StickyNote" x="389" y="189" w="293" h="178" measuredW="109" measuredH="123" zOrder="15" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Detailed%20information</text>
       </controlProperties>
