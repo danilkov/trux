@@ -1,0 +1,10 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="156" measuredH="329" mockupW="156" mockupH="329">
+  <controls>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::StickyNote" x="24" y="15" w="109" h="123" measuredW="109" measuredH="123" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Ads%0A%20%0AHide%20for%20the%20paying%20customers%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Canvas" x="0" y="0" w="156" h="329" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
