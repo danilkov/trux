@@ -1,4 +1,4 @@
-<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="2021" measuredH="1065" mockupW="1941" mockupH="1044">
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="2021" measuredH="1132" mockupW="1941" mockupH="1111">
   <controls>
     <control controlID="38" controlTypeID="__group__" x="80" y="21" w="1941" h="732" measuredW="1941" measuredH="732" zOrder="1" locked="false" isInGroup="-1">
       <controlProperties>
@@ -906,6 +906,11 @@
     <control controlID="70" controlTypeID="com.balsamiq.mockups::StickyNote" x="1439" y="927" w="109" h="70" measuredW="109" measuredH="123" zOrder="32" locked="false" isInGroup="-1">
       <controlProperties>
         <text>Paypall%3F</text>
+      </controlProperties>
+    </control>
+    <control controlID="71" controlTypeID="com.balsamiq.mockups::StickyNote" x="1073" y="1009" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="33" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>The%20button%20should%20be%20%27Add%27%20if%20there%20is%20no%20payment%20info%20set%20up%20yet</text>
       </controlProperties>
     </control>
   </controls>
