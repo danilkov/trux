@@ -148,6 +148,11 @@
     </control>
     <control controlID="86" controlTypeID="com.balsamiq.mockups::Component" x="701" y="161" w="156" h="329" measuredW="156" measuredH="329" zOrder="39" locked="false" isInGroup="-1">
       <controlProperties>
+        <override controlID="6" x="24" y="15" w="109" h="180">
+          <text>Ads%0A%20%0AHide%20for%20the%20paying%20customers%20and%20show%20search%20facets%20instead%3F</text>
+        </override>
+        <override controlID="7" x="0" y="0" w="156" h="329"/>
+        <override controlID="-1"/>
         <src>./assets/ads%20-%20vertical.bmml</src>
       </controlProperties>
     </control>
