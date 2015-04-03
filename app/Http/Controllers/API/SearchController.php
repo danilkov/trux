@@ -3,6 +3,7 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
+use App\Models\Item;
 use Response;
 
 class SearchController extends Controller {
@@ -13,10 +14,16 @@ class SearchController extends Controller {
 	 * @return Response
 	 */
 	public function simple() {
-		// TODO: The user needs to be authenticated
-
+        $items = array(
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'Volvo', 'description' => 'Blah1']),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'Mercedes', 'description' => 'Blah2']),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'Scania', 'description' => 'Blah3']),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'MAN', 'description' => 'Blah4']),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'MAZ', 'description' => 'Blah5']),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'KaMAZ', 'description' => 'Blah6']),
+        );
         return Response::json([
-           'items' => 'That should be an array of search items'
+           'items' => $items
         ]);
 	}
 
@@ -27,9 +34,17 @@ class SearchController extends Controller {
 	 */
 	public function advanced() {
 		// TODO: The user needs to be logged in
-		// and to have permissions (a payed plan)
+		// and to have permissions (a payed plan)?
+        $items = array(
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'Volvo', 'description' => 'Blah1', 'mileage' => 10000]),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'Mercedes', 'description' => 'Blah2', 'mileage' => 100000]),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'Scania', 'description' => 'Blah3', 'mileage' => 1]),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'MAN', 'description' => 'Blah4', 'mileage' => 1000]),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'MAZ', 'description' => 'Blah5', 'mileage' => 16000]),
+            (new Item())->newInstance(['type' => 'Truck', 'brand' => 'KaMAZ', 'description' => 'Blah6', 'mileage' => 25000]),
+        );
         return Response::json([
-            'items' => 'That should be an array of advanced search items'
+            'items' => $items
         ]);
 	}
 }

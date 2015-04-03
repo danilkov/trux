@@ -12,12 +12,21 @@
     </div>
 </div>
 
+<div data-ng-show="items" ng-repeat="item in items">
+    <span>{{item.brand}}</span> <span>{{item.type}}</span>, <span data-ng-show="item.mileage">{{item.mileage}}</span>
+    <div>
+        <span>{{item.description}}</span>
+    </div>
+</div>
+
 <!-- TODO: tab 1 -->
-<div>
+<hr/>
+<div class="row">
     Simple search form<br/>
-    <a ng-click="search()">Search</a> | <a ng-href="/signin" data-ng-hide="token">Advanced search</a>
+    <a ng-click="search()">Search</a><span data-ng-hide="token"> | <a ng-href="/signin">Advanced search</a></span>
 </div>
 <!-- TODO: tab 2 -->
+<hr/>
 <div data-ng-show="token" class="row">
     Advanced search form<br/>
     <a ng-click="advancedSearch()">Search</a>
