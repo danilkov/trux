@@ -123,7 +123,7 @@
 
         $rootScope.$on( "$routeChangeStart", function(event, next) {
             if ($rootScope.getToken() == null) {
-                if (next && next.templateUrl === 'account') {
+                if (next && next.templateUrl && next.templateUrl.indexOf('modules/account/') == 0) {
                     $location.path("/signin");
                 }
             }
