@@ -1,0 +1,145 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="891" measuredH="807" mockupW="852" mockupH="753">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::Canvas" x="39" y="161" w="677" h="508" measuredW="100" measuredH="70" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="46" controlTypeID="com.balsamiq.mockups::Component" x="39" y="54" w="653" h="74" measuredW="653" measuredH="74" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/header.bmml</src>
+      </controlProperties>
+    </control>
+    <control controlID="47" controlTypeID="com.balsamiq.mockups::Component" x="41" y="679" w="850" h="128" measuredW="850" measuredH="128" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/footer.bmml</src>
+      </controlProperties>
+    </control>
+    <control controlID="49" controlTypeID="com.balsamiq.mockups::Image" x="155" y="382" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Thumbnail</text>
+      </controlProperties>
+    </control>
+    <control controlID="50" controlTypeID="com.balsamiq.mockups::Image" x="246" y="382" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Thumbnail</text>
+      </controlProperties>
+    </control>
+    <control controlID="51" controlTypeID="com.balsamiq.mockups::Image" x="63" y="382" w="-1" h="-1" measuredW="77" measuredH="79" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Thumbnail</text>
+      </controlProperties>
+    </control>
+    <control controlID="85" controlTypeID="com.balsamiq.mockups::Image" x="60" y="189" w="264" h="178" measuredW="500" measuredH="333" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <src>./assets/16101395300_aa9426213e.jpg</src>
+        <text>Bigger%20image/video</text>
+      </controlProperties>
+    </control>
+    <control controlID="86" controlTypeID="com.balsamiq.mockups::PointyButton" x="42" y="408" w="21" h="-1" measuredW="30" measuredH="27" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <direction>left</direction>
+        <newLayout>true</newLayout>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="87" controlTypeID="com.balsamiq.mockups::PointyButton" x="63" y="265" w="21" h="-1" measuredW="30" measuredH="27" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <direction>left</direction>
+        <newLayout>true</newLayout>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="88" controlTypeID="com.balsamiq.mockups::PointyButton" x="324" y="408" w="21" h="-1" measuredW="30" measuredH="27" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <direction>right</direction>
+        <newLayout>true</newLayout>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="89" controlTypeID="com.balsamiq.mockups::PointyButton" x="299" y="265" w="21" h="-1" measuredW="30" measuredH="27" zOrder="10" locked="false" isInGroup="-1">
+      <controlProperties>
+        <borderStyle>none</borderStyle>
+        <direction>right</direction>
+        <newLayout>true</newLayout>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="90" controlTypeID="com.balsamiq.mockups::StickyNote" x="138" y="143" w="-1" h="-1" measuredW="109" measuredH="123" zOrder="11" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Overlay.%20Only%20visible%20on%20mouse-overs</text>
+      </controlProperties>
+    </control>
+    <control controlID="91" controlTypeID="com.balsamiq.mockups::Arrow" x="247" y="207" w="59" h="58" measuredW="150" measuredH="100" zOrder="12" locked="false" isInGroup="-1">
+      <controlProperties>
+        <leftArrow>false</leftArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="92" controlTypeID="com.balsamiq.mockups::Arrow" x="73" y="207" w="65" h="58" measuredW="150" measuredH="100" zOrder="13" locked="false" isInGroup="-1">
+      <controlProperties>
+        <direction>bottom</direction>
+        <rightArrow>false</rightArrow>
+        <text/>
+      </controlProperties>
+    </control>
+    <control controlID="93" controlTypeID="com.balsamiq.mockups::Component" x="726" y="162" w="156" h="329" measuredW="156" measuredH="329" zOrder="14" locked="false" isInGroup="-1">
+      <controlProperties>
+        <override controlID="6" x="24" y="15" w="109" h="123"/>
+        <override controlID="7" x="0" y="0" w="156" h="329"/>
+        <override controlID="-1"/>
+        <src>./assets/ads%20-%20vertical.bmml</src>
+      </controlProperties>
+    </control>
+    <control controlID="94" controlTypeID="com.balsamiq.mockups::StickyNote" x="389" y="174" w="293" h="482" measuredW="109" measuredH="123" zOrder="15" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Detailed%20information</text>
+      </controlProperties>
+    </control>
+    <control controlID="95" controlTypeID="com.balsamiq.mockups::Canvas" x="64" y="493" w="259" h="163" measuredW="100" measuredH="70" zOrder="16" locked="false" isInGroup="-1"/>
+    <control controlID="96" controlTypeID="com.balsamiq.mockups::Label" x="73" y="503" w="-1" h="-1" measuredW="111" measuredH="24" zOrder="17" locked="false" isInGroup="-1">
+      <controlProperties>
+        <bold>true</bold>
+        <size>16</size>
+        <text>Contact%20seller</text>
+      </controlProperties>
+    </control>
+    <control controlID="97" controlTypeID="com.balsamiq.mockups::Link" x="73" y="565" w="-1" h="-1" measuredW="122" measuredH="19" zOrder="18" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>e-mail@address.com</text>
+      </controlProperties>
+    </control>
+    <control controlID="98" controlTypeID="com.balsamiq.mockups::Label" x="73" y="527" w="-1" h="-1" measuredW="37" measuredH="21" zOrder="19" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Phone</text>
+      </controlProperties>
+    </control>
+    <control controlID="99" controlTypeID="com.balsamiq.mockups::Label" x="73" y="548" w="-1" h="-1" measuredW="21" measuredH="21" zOrder="20" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Fax</text>
+      </controlProperties>
+    </control>
+    <control controlID="100" controlTypeID="com.balsamiq.mockups::IconLabel" x="73" y="594" w="-1" h="-1" measuredW="56" measuredH="47" zOrder="21" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>CommentsIcon%7Cmedium</icon>
+        <text>Live%20Chat</text>
+      </controlProperties>
+    </control>
+    <control controlID="101" controlTypeID="com.balsamiq.mockups::IconLabel" x="137" y="594" w="-1" h="-1" measuredW="94" measuredH="47" zOrder="22" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>EmailIcon%7Cmedium</icon>
+        <text>Leave%20Message</text>
+      </controlProperties>
+    </control>
+    <control controlID="102" controlTypeID="com.balsamiq.mockups::IconLabel" x="234" y="594" w="-1" h="-1" measuredW="87" measuredH="47" zOrder="23" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>VideoCameraIcon%7Cmedium</icon>
+        <text>Request%20Video</text>
+      </controlProperties>
+    </control>
+    <control controlID="103" controlTypeID="com.balsamiq.mockups::Icon" x="273" y="319" w="-1" h="-1" measuredW="48" measuredH="48" zOrder="24" locked="false" isInGroup="-1">
+      <controlProperties>
+        <icon>FullScreenIcon%7Clarge</icon>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>
