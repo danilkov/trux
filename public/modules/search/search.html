@@ -1,0 +1,24 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div>
+            <div class="row">
+                <div data-ng-hide="token" class="col-md-6">
+                    <a ng-href="/signup" class="btn btn-default btn-primary margin-right" role="button">Sign up</a>
+                    or
+                    <a ng-href="/signin" class="btn btn-default btn-primary margin-left" role="button">Sign in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- TODO: tab 1 -->
+<div>
+    Simple search form<br/>
+    <a ng-click="search()">Search</a> | <a ng-href="/signin" data-ng-hide="token">Advanced search</a>
+</div>
+<!-- TODO: tab 2 -->
+<div data-ng-show="token" class="row">
+    Advanced search form<br/>
+    <a ng-click="advancedSearch()">Search</a>
+</div>
