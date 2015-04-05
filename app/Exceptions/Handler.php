@@ -37,7 +37,8 @@ class Handler extends ExceptionHandler {
 	public function render($request, Exception $e)
 	{
         if($e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
-            return response()->view('index')->header('Content-Type', 'text/html'); // Need that for the AngularJS html5Mode urls to work
+            $file = public_path() . '/main.html';
+            return response()->make(\File::get($file), 200, ['Content-Type' => 'text/html', 'Expires' => date('D, d M Y H:i:s ', time()).'GMT']);
             //return response(view('errors.404'), 404);
         }
         return parent::render($request, $e);

@@ -2,21 +2,46 @@
     'use strict';
 
     angular.module('auth').
-    controller('AuthController', ['$rootScope', '$scope', 'AuthService', 
-            function ($rootScope, $scope, authService) {
-        function successAuth(res) {
+    controller('AuthController', ['$rootScope', '$scope', '$interval', 'AuthService',
+            function ($rootScope, $scope, $interval, authService) {
+        function setToken(token) {
             if($rootScope.setToken) {
-                $rootScope.setToken(res.token);
+                $rootScope.setToken(token);
             }
+        }
+        function successAuth(res) {
+            setToken(res.token);
             window.location = "/";
         }
 
         function successLogout() {
-            if($rootScope.setToken) {
-                $rootScope.setToken(null);
-            }
+            setToken(null);
             window.location = "/";
         }
+
+        function refreshToken() {
+            if($rootScope.getToken) {
+                var token = $rootScope.getToken();
+                if(token) {
+                    authService.refresh(function (res) {
+                            setToken(res.token);
+                        }, function () {
+                            setToken(null);
+                        });
+                }
+            }
+        }
+
+        if(!$rootScope.tokenRefreshPromise) {
+            $rootScope.tokenRefreshPromise = $interval(refreshToken, 60000); // refresh the token every minute
+        }
+
+        $scope.$on('$destroy', function() {
+            if($rootScope.tokenRefreshPromise) {
+                $interval.cancel($rootScope.tokenRefreshPromise);
+                delete $rootScope.tokenRefreshPromise;
+            }
+        });
 
         $scope.signin = function () {
             var formData = {
@@ -27,7 +52,7 @@
             authService.signin(formData, successAuth, function () {
                 $rootScope.error = 'Invalid credentials.';
             })
-        }
+        };
 
         $scope.signup = function () {
             var formData = {
@@ -40,10 +65,10 @@
             authService.signup(formData, successAuth, function (res) {
                 $rootScope.error = res.error || 'Failed to sign up.';
             })
-        }
+        };
 
         $scope.logout = function () {
             authService.logout(successLogout);
-        }
+        };
     }]);
 })();

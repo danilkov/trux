@@ -12,8 +12,9 @@
 */
 
 Route::get('/', function() {
-    return View::make('index');
-}); //'HomeController@index'
+    $file = public_path() . '/main.html';
+    return Response::make(File::get($file), 200, ['Content-Type' => 'text/html', 'Expires' => date('D, d M Y H:i:s ', time()).'GMT']);
+});
 
 Route::group(['prefix' => 'api/v1', 'namespace' => 'API'], function() {
     Route::post('/signin', 'AuthController@signin');

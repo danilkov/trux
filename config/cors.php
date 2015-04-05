@@ -29,7 +29,7 @@ return array(
         'api/*' => array(
             'allowedOrigins' => array('*'),
             'allowedHeaders' => array('*'),
-            'allowedMethods' => array('GET', 'POST', 'PUT', 'DELETE'/*, 'HEAD'*/),
+            'allowedMethods' => array('GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'/*, 'HEAD'*/),
             'maxAge' => 3600,
         ),
     ),
