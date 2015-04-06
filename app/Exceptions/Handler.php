@@ -37,7 +37,7 @@ class Handler extends ExceptionHandler {
 	public function render($request, Exception $e)
 	{
         if($e instanceof \Symfony\Component\HttpKernel\Exception\NotFoundHttpException) {
-            $file = public_path() . '/main.html';
+            $file = public_path() . '/app.html';
             return response()->make(\File::get($file), 200, ['Content-Type' => 'text/html', 'Expires' => date('D, d M Y H:i:s ', time()).'GMT']);
             //return response(view('errors.404'), 404);
         }

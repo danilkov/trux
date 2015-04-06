@@ -16,7 +16,7 @@ class Item extends Model {
 	 *
 	 * @var array
 	 */
-	protected $fillable = ['type', 'brand', 'description', 'mileage'];
+	protected $fillable = ['id', 'type', 'brand', 'description', 'mileage'];
 
 	/**
 	 * The attributes excluded from the model's JSON form.

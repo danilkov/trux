@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function() {
-    $file = public_path() . '/main.html';
+    $file = public_path() . '/app.html';
     return Response::make(File::get($file), 200, ['Content-Type' => 'text/html', 'Expires' => date('D, d M Y H:i:s ', time()).'GMT']);
 });
 

@@ -2,15 +2,15 @@
     'use strict';
 
     angular.module('search').
-    controller('SearchController', ['$rootScope', '$scope', 'SearchService',
-            function ($rootScope, $scope, searchService) {
+    controller('SearchController', ['$rootScope', '$scope', '$location', 'SearchService',
+            function ($rootScope, $scope, $location, searchService) {
         function searchSuccess(res) {
             if(res && res.items) { // TODO: verify if it's an array
                 $scope.items = res.items;
             }
         }
 
-        $scope.search = function () {
+        $scope.search = function() {
             var formData = {
                 type: $scope.type,
                 feature1: $scope.feature1
@@ -20,7 +20,7 @@
             })
         };
 
-        $scope.advancedSearch = function () {
+        $scope.advancedSearch = function() {
             if($rootScope.getToken() == null) {
                 $rootScope.error = 'Access denied';
                 return;
@@ -35,6 +35,9 @@
             searchService.advancedSearch(formData, searchSuccess, function (res) {
                 $rootScope.error = res.error || 'Failed to sign up.';
             })
+        };
+        $scope.viewDetails = function(id) {
+            $location.path("/details/" + id);
         };
     }]);
 })();

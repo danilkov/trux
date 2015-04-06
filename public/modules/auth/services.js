@@ -10,7 +10,7 @@
             $http.post(urls.BASE_API + '/signin', data).success(success).error(error);
         };
         this.refresh = function(success, error) {
-            $http.get(urls.BASE_API + '/token-refresh').success(success).error(error);
+            $http.get(urls.BASE_API + '/token-refresh', {ignoreLoadingBar: true}).success(success).error(error);
         };
         this.logout = function (success) {
             success();

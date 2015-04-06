@@ -2,8 +2,8 @@
     'use strict';
 
     angular.module('auth').
-    controller('AuthController', ['$rootScope', '$scope', '$interval', 'AuthService',
-            function ($rootScope, $scope, $interval, authService) {
+    controller('AuthController', ['$rootScope', '$scope', '$location', '$interval', 'AuthService',
+            function ($rootScope, $scope, $location, $interval, authService) {
         function setToken(token) {
             if($rootScope.setToken) {
                 $rootScope.setToken(token);
@@ -11,11 +11,13 @@
         }
         function successAuth(res) {
             setToken(res.token);
-            window.location = "/";
+            $location.path("/");
+            //window.location = "/";
         }
 
         function successLogout() {
             setToken(null);
+            //$location.path("/");
             window.location = "/";
         }
 
@@ -36,12 +38,14 @@
             $rootScope.tokenRefreshPromise = $interval(refreshToken, 60000); // refresh the token every minute
         }
 
+/*
         $scope.$on('$destroy', function() {
             if($rootScope.tokenRefreshPromise) {
                 $interval.cancel($rootScope.tokenRefreshPromise);
                 delete $rootScope.tokenRefreshPromise;
             }
         });
+*/
 
         $scope.signin = function () {
             var formData = {
