@@ -10,7 +10,7 @@
         BASE: '',
         BASE_API: '/api/v1'
     }).
-    config(['$routeProvider', '$httpProvider', '$locationProvider', 'TokenService', function ($routeProvider, $httpProvider, $locationProvider, tokenService) {
+    config(['$routeProvider', '$httpProvider', '$locationProvider', function ($routeProvider, $httpProvider, $locationProvider) {
         $routeProvider.
             when('/', {
                 templateUrl: 'modules/search/search.html',
@@ -35,7 +35,7 @@
             otherwise({
                 redirectTo: '/'
             });
-        $httpProvider.interceptors.push(['$q', '$location', '$rootScope', function ($q, $location, $rootScope) {
+        $httpProvider.interceptors.push(['$q', '$location', '$rootScope', 'TokenService', function ($q, $location, $rootScope, tokenService) {
             return {
                 'request': function (config) {
                     config.headers = config.headers || {};
