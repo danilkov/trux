@@ -13,14 +13,18 @@
             }
         }
 
+        function searchFailed() {
+            $rootScope.error = 'Search failed';
+            items = [];
+            $scope.items = items;
+        });
+
         $scope.search = function() {
             var formData = {
                 type: $scope.type,
                 feature1: $scope.feature1
             };
-            searchService.search(formData, searchSuccess, function () {
-                $rootScope.error = 'Search failed';
-            })
+            searchService.search(formData, searchSuccess, searchFailed);
         };
 
         $scope.advancedSearch = function() {
@@ -35,9 +39,7 @@
                 feature3: $scope.feature3
             };
 
-            searchService.advancedSearch(formData, searchSuccess, function (res) {
-                $rootScope.error = res.error || 'Failed to sign up.';
-            })
+            searchService.advancedSearch(formData, searchSuccess, searchFailed);
         };
         $scope.viewDetails = function(id) {
             $location.path("/details/" + id);
