@@ -1,13 +1,15 @@
 (function () {
     'use strict';
 
+    var items = [];
+
     angular.module('search').
     controller('SearchController', ['$rootScope', '$scope', '$location', 'SearchService',
             function ($rootScope, $scope, $location, searchService) {
         function searchSuccess(res) {
             if(res && res.items) { // TODO: verify if it's an array
                 $scope.items = res.items;
-                sessionStorage.items = res.items;
+                items = res.items;
             }
         }
 
@@ -41,6 +43,6 @@
             $location.path("/details/" + id);
         };
 
-        $scope.items = sessionStorage.items;
+        $scope.items = items;
     }]);
 })();
