@@ -2,35 +2,28 @@
     'use strict';
 
     angular.module('auth').
-    controller('AuthController', ['$rootScope', '$scope', '$location', '$interval', 'AuthService',
-            function ($rootScope, $scope, $location, $interval, authService) {
-        function setToken(token) {
-            if($rootScope.setToken) {
-                $rootScope.setToken(token);
-            }
-        }
+    controller('AuthController', ['$rootScope', '$scope', '$location', '$interval', 'TokenService', 'AuthService',
+            function ($rootScope, $scope, $location, $interval, tokenService, authService) {
         function successAuth(res) {
-            setToken(res.token);
+            tokenService.setToken(res.token);
             $location.path("/");
             //window.location = "/";
         }
 
         function successLogout() {
-            setToken(null);
+            tokenService.setToken(null);
             //$location.path("/");
             window.location = "/";
         }
 
         function refreshToken() {
-            if($rootScope.getToken) {
-                var token = $rootScope.getToken();
-                if(token) {
-                    authService.refresh(function (res) {
-                            setToken(res.token);
-                        }, function () {
-                            setToken(null);
-                        });
-                }
+            var token = tokenService.getToken();
+            if(token) {
+                authService.refresh(function (res) {
+                        tokenService.setToken(res.token);
+                    }, function () {
+                        tokenService.setToken(null);
+                    });
             }
         }
 
