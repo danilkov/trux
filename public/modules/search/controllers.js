@@ -7,6 +7,7 @@
         function searchSuccess(res) {
             if(res && res.items) { // TODO: verify if it's an array
                 $scope.items = res.items;
+                sessionStorage.items = items;
             }
         }
 
@@ -39,5 +40,7 @@
         $scope.viewDetails = function(id) {
             $location.path("/details/" + id);
         };
+
+        $scope.items = sessionStorage.items;
     }]);
 })();
