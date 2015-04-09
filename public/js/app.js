@@ -66,5 +66,8 @@
             }
         });
         tokenService.setToken(localStorage.token);
+        if(!tokenService.isTokenValid()) {
+            // TODO: if the 'remember me' was enabled, re-signin using the expired token, else remove it from the local storage
+        }
     }]);
 })();
