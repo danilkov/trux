@@ -4,7 +4,8 @@
         'ngRoute',
         'angular-loading-bar',
         'auth',
-        'search'
+        'search',
+        'vehicles'
     ]).
     constant('urls', {
         BASE: '',
@@ -24,9 +25,9 @@
                 templateUrl: 'modules/auth/signup.html',
                 controller: 'AuthController'
             }).
-            when('/details/:id', {
-                templateUrl: 'modules/account/account.html',
-                controller: 'AuthController'  // FIXME: use the item controller and html
+            when('/vehicle/:id', {
+                templateUrl: 'modules/vehicles/details.html',
+                controller: 'VehiclesController'
             }).
             when('/account', {
                 templateUrl: 'modules/account/account.html',

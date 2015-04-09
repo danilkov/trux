@@ -1,22 +1,22 @@
 (function () {
     'use strict';
 
-    var items = [];
+    var vehicles = [];
 
     angular.module('search').
     controller('SearchController', ['$rootScope', '$scope', '$location', 'SearchService', 'TokenService',
             function ($rootScope, $scope, $location, searchService, tokenService) {
         function searchSuccess(res) {
-            if(res && res.items) { // TODO: verify if it's an array
-                $scope.items = res.items;
-                items = res.items;
+            if(res && res.vehicles) { // TODO: verify if it's an array
+                $scope.vehicles = res.vehicles;
+                vehicles = res.vehicles;
             }
         }
 
         function searchFailed() {
             $rootScope.error = 'Search failed';
-            items = [];
-            $scope.items = items;
+            vehicles = [];
+            $scope.vehicles = vehicles;
         }
 
         $scope.search = function() {
@@ -45,6 +45,6 @@
             $location.path("/details/" + id);
         };
 
-        $scope.items = items;
+        $scope.vehicles = vehicles;
     }]);
 })();

@@ -2,14 +2,14 @@
 
 use Illuminate\Database\Eloquent\Model;
 
-class Item extends Model {
+class Vehicle extends Model {
 
 	/**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
-//	protected $table = 'items';
+//	protected $table = 'vehicles';
 
 	/**
 	 * The attributes that are mass assignable.

@@ -12,12 +12,12 @@
     </div>
 </div>
 
-<div data-ng-show="items" ng-repeat="item in items">
-    <span>{{item.brand}}</span> <span>{{item.type}}</span>, <span data-ng-show="item.mileage">{{item.mileage}}</span>
+<div data-ng-show="vehicles" ng-repeat="vehicle in vehicles">
+    <span>{{vehicle.brand}}</span> <span>{{vehicle.type}}</span>, <span data-ng-show="vehicle.mileage">{{vehicle.mileage}}</span>
     <div>
-        <span>{{item.description}}</span>
+        <span>{{vehicle.description}}</span>
     </div>
-    <button class="btn btn-default btn-primary margin-right" ng-click="viewDetails(item.id)">Details</button>
+    <button class="btn btn-default btn-primary margin-right" ng-click="viewDetails(vehicle.id)">Details</button>
     <hr/>
 </div>
 
