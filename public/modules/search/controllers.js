@@ -17,7 +17,7 @@
             $rootScope.error = 'Search failed';
             items = [];
             $scope.items = items;
-        });
+        }
 
         $scope.search = function() {
             var formData = {
