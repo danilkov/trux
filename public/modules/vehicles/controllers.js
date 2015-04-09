@@ -2,7 +2,7 @@
     'use strict';
 
     angular.module('vehicles').
-    controller('VehiclesController', ['$rootScope', '$scope', '$location', 'VehiclesService', '$routeParams'
+    controller('VehiclesController', ['$rootScope', '$scope', '$location', 'VehiclesService', '$routeParams',
             function ($rootScope, $scope, $location, vehiclesService, $routeParams) {
 
         if($routeParams && $routeParams.id) {
