@@ -4,8 +4,8 @@
     var items = [];
 
     angular.module('search').
-    controller('SearchController', ['$rootScope', '$scope', '$location', 'SearchService',
-            function ($rootScope, $scope, $location, searchService) {
+    controller('SearchController', ['$rootScope', '$scope', '$location', 'SearchService', 'TokenService',
+            function ($rootScope, $scope, $location, searchService, tokenService) {
         function searchSuccess(res) {
             if(res && res.items) { // TODO: verify if it's an array
                 $scope.items = res.items;
@@ -28,7 +28,7 @@
         };
 
         $scope.advancedSearch = function() {
-            if($rootScope.getToken() == null) {
+            if(tokenService.getToken() == null) {
                 $rootScope.error = 'Access denied';
                 return;
             }
