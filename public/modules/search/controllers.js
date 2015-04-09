@@ -42,7 +42,7 @@
             searchService.advancedSearch(formData, searchSuccess, searchFailed);
         };
         $scope.viewDetails = function(id) {
-            $location.path("/details/" + id);
+            $location.path("/vehicle/" + id);
         };
 
         $scope.vehicles = vehicles;
