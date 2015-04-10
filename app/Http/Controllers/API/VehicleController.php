@@ -3,7 +3,9 @@
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use Illuminate\Http\Request;
+use App\Models\Vehicle;
+//use Illuminate\Http\Request;
+use Response;
 
 class VehicleController extends Controller {
 
@@ -43,12 +45,16 @@ class VehicleController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id)
-	{
-		//
+	public function show($id) {
+        return Response::json((new Vehicle())->newInstance(['id' => $id, 'type' => 'Truck', 'brand' => 'TBD', 'description' => 'TBD']));
 	}
 
-	/**
+    public function getAdvanced($id) {
+        // TODO: verify permissions
+        return Response::json((new Vehicle())->newInstance(['id' => $id, 'type' => 'Truck', 'brand' => 'TBD', 'description' => 'TBD', 'mileage' => 'TBD']));
+    }
+
+    /**
 	 * Show the form for editing the specified resource.
 	 *
 	 * @param  int  $id

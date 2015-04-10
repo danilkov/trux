@@ -22,6 +22,8 @@ Route::group(['prefix' => 'api/v1', 'namespace' => 'API'], function() {
     Route::get('/token-refresh', ['middleware' => 'token.refresh']);
 
     Route::post('/search', 'SearchController@simple');
+    Route::resource('/vehicle', 'VehicleController');
+    Route::get('/vehicle/getAdvanced/{vehicle}', 'VehicleController@getAdvanced');
 });
 
 Route::group(['prefix' => 'api/v1', 'namespace' => 'API', 'middleware' => 'token.auth'], function() {
