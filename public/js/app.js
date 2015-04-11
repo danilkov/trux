@@ -1,7 +1,7 @@
 (function () {
     'use strict';
     angular.module('truxApp', [
-        'ngRoute',
+        'ngRoute', 'ngResource',
         'angular-loading-bar',
         'auth',
         'search',

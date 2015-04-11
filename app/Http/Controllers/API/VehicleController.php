@@ -45,13 +45,13 @@ class VehicleController extends Controller {
 	 * @param  int  $id
 	 * @return Response
 	 */
-	public function show($id) {
-        return Response::json((new Vehicle())->newInstance(['id' => $id, 'type' => 'Truck', 'brand' => 'TBD', 'description' => 'TBD']));
-	}
-
-    public function getAdvanced($id) {
+    public function show($id) {
         // TODO: verify permissions
         return Response::json((new Vehicle())->newInstance(['id' => $id, 'type' => 'Truck', 'brand' => 'TBD', 'description' => 'TBD', 'mileage' => 'TBD']));
+    }
+
+    public function get($id) {
+        return Response::json((new Vehicle())->newInstance(['id' => $id, 'type' => 'Truck', 'brand' => 'TBD', 'description' => 'TBD']));
     }
 
     /**

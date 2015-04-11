@@ -8,7 +8,11 @@
                 <p>Fetching data...</p>
             </div>
             <div class="panel-body ng-hide" data-ng-show="vehicle">
-                TBD
+                <span>{{vehicle.brand}}</span> <span>{{vehicle.type}}</span>, <span data-ng-show="vehicle.mileage">{{vehicle.mileage}}</span>
+                <div>
+                    <span>{{vehicle.description}}</span>
+                </div>
+                <button class="btn btn-default btn-primary margin-right" ng-click="viewDetails(vehicle.id)">Details</button>
             </div>
         </div>
     </div>
